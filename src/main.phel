@@ -1,0 +1,11 @@
+(ns phelano\main
+  (:require-file "vendor/autoload.php")
+  (:use Hyperf\Nano\Factory\AppFactory))
+
+(def app (php/:: AppFactory (createCoroutine)))
+
+(php/-> app (get "/" (php/route (fn [req] (str "Hello, " (php/-> req (query "name" "World")))))))
+
+# *build-mode* isn't enough because it is false when cached
+(if-not (= (second argv) "build")
+  (php/-> app (run)))

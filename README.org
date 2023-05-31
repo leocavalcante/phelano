@@ -1,0 +1,19 @@
+#+title: Phelano
+
+Yes... Phel lang and Hyperf's Nano!
+
+#+begin_src shell
+make
+#+end_src
+
+#+begin_src shell
+make srv
+#+end_src
+
+#+begin_src
+curl http://localhost:9501
+#+end_src
+
+#+begin_src
+curl http://localhost:9501\?name=Phel
+#+end_src
