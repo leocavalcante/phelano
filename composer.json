@@ -3,6 +3,7 @@
     "description": "Yes... Phel and Hyperf's Nano!",
     "type": "project",
     "require": {
+        "phel-lang/phel-lang": "^0.10.1",
         "hyperf/nano": "^2.0"
     },
     "license": "GPL-3.0-or-later",
@@ -21,8 +22,5 @@
         }
     ],
     "minimum-stability": "dev",
-    "prefer-stable": true,
-    "require-dev": {
-        "phel-lang/phel-lang": "^0.10.1"
-    }
+    "prefer-stable": true
 }
