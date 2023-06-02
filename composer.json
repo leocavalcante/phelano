@@ -11,9 +11,9 @@
         "psr-4": {
             "Phelano\\": "src/"
         },
-	"files": [
-	    "lib/interop.php"
-	]
+        "files": [
+            "lib/interop.php"
+        ]
     },
     "authors": [
         {
